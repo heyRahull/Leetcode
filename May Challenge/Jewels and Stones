@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int numJewelsInStones(string J, string S) {
+        map<char,int>mp;
+        for(int i=0;i<(int)J.size();i++)
+        {
+            mp[J[i]]++;
+        }
+        int total=0;
+        for(int i=0;i<(int)S.size();i++)
+        {
+            if(mp.count(S[i])>0)
+                total++;
+
+        }
+        return total;
+
+
+    }
+};
