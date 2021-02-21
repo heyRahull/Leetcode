@@ -1,0 +1,21 @@
+int xorOperation(int n, int start) {
+        
+        vector<int>v;
+        int ans = 0;
+        
+   for(int i=0;i<n;i++)
+    {
+        v.insert(v.begin()+i,start+(2*i));
+
+    }
+    int i=0;
+        
+    while(i<n)
+    {
+        ans=ans^v[i];
+        i++;
+    }
+        
+        return ans;
+        
+    }
